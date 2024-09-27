@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Restaurant</title>
+  <link rel="stylesheet" href="Restaurant.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Golden Fredal</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#reservation">Reservations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the Golden Fredal</h1>
+      <p>Experience a taste of good meals like never before</p><br>
+      <a href="#reservation" class="btn">Reserve a Table</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <h2 class="section-title">Our Menu</h2>
+    <div class="menu-container">
+      <div class="menu-item">
+        <h3>Salads</h3>
+        <p>Delicious salads(both continental and local)</p>
+        <!-- <span class="price">$25.99</span> -->
+      </div>
+      <div class="menu-item">
+        <h3>Stews</h3>
+        <p>Premium sauces and stews</p>
+        <!-- <span class="price">$35.99</span> -->
+      </div>
+      <div class="menu-item">
+        <h3>Soups</h3>
+        <p>Tasty and affordable variety of soups</p>
+        <!-- <span class="price">$18.99</span> -->
+      </div>
+      <div class="menu-item">
+        <h3>Rice Dishes</h3>
+        <p>Delecate rice Dishes</p>
+       <!-- <span class="price">9.99</span> -->
+      </div>
+    </div>
+  </section>
+  <!-- Reservation Section -->
+  <section id="reservation" class="reservation-section">
+    <h2 class="section-title">Reservations</h2>
+    <form id="reservation-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+      <button type="submit" class="btn">Reserve Now</button>
+    </form>
+    <p id="confirmation-message" class="confirmation-message"></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Location: Airport City, Accra</p>
+    <p>Phone: +233 55 773 0996</p>
+    <p>Email: pearl4business0nly@gmail.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 FredAl. All rights reserved.</p>
+  </footer>
+
+  <script src="Restaurant.js"></script>
+</body>
+</html>
